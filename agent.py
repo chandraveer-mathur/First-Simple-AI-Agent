@@ -4,7 +4,7 @@ from parser import parse_llm_output
 from tools import TOOLS
 
 
-def run_agent(user_input: str, model="phi3", max_steps=5, debug=True):
+def run_agent(user_input: str, model="phi3", max_steps=5, debug=False):
     history = ""
 
     for step in range(max_steps):
